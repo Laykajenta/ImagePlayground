@@ -9,7 +9,8 @@ new_folder = sys.argv[2]
 
 
 # Create 'new' folder if it doesn't exist
-# bruker  if not for å få sjekke at folder eksisterer not er for at if statementet skal bli True og gå videre i loopen
+# bruker  if not for å få sjekke at folder eksisterer not er for
+# at if statementet skal bli True og gå videre i loopen
 if not os.path.exists(new_folder):
     os.makedirs(new_folder)
 
