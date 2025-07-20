@@ -1,11 +1,15 @@
+import sys
 import os
 from PIL import Image
 
 # Define paths
-base_folder = "Pokedex"
-new_folder = os.path.join(base_folder, "new")
+base_folder = sys.argv[1]
+new_folder = sys.argv[2]
+
+
 
 # Create 'new' folder if it doesn't exist
+# bruker  if not for å få sjekke at folder eksisterer not er for at if statementet skal bli True og gå videre i loopen
 if not os.path.exists(new_folder):
     os.makedirs(new_folder)
 
